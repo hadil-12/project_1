@@ -1,0 +1,984 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* ********************** start header ********************** */
+.header{
+    width: 100%;
+    height:45px ;
+    background-color: burlywood;
+    top:0;
+    position: fixed;
+    z-index: 70;
+    opacity: 0.9;
+}
+.but {
+    display: inline;
+    position: relative;
+    
+}
+.iccc {
+    display: inline;
+    position: absolute;
+    left: 10px;
+    bottom: -3px;
+    
+}
+.inputHeader {
+    width: 200px;
+    height: 32px;
+    margin-top: 7px;
+    border-radius: 15px 15px ;
+}
+.iconS {
+   margin-right: 150px;
+}
+.iconHeader {
+
+    font-size: 30px;
+    color: rgb(5, 5, 4);
+    margin: 5px 20px;
+    float: left;
+    
+}
+.listHeader {
+
+    margin-left: 50px;
+    list-style: none;
+    float: right;
+    margin-right: 70px;
+
+}
+.listHeader li {
+
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 10px;
+
+}
+.listHeader li a {
+
+    text-decoration: none;
+    color: beige;
+    font-size: larger;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 6px;
+    position: relative;
+
+}
+/* /////////////////////////////////////////////// home after */
+.listHeader a:after {
+
+    content: "";
+    position: absolute;
+    background-color: rgb(21, 20, 20);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+      
+}
+.listHeader a:hover::after{
+    width: 100%;
+    transition: 1s;
+}
+/* /////////////////////////////////////////////// home after */
+/* ********************** end header ********************** */
+
+
+/* ********************** start home ********************** */
+.home {
+
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../imag/mbook.jpg);
+    position: relative;
+    
+}
+.homeOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(95, 80, 65,0.7);
+}
+.homeContent {
+    width: 700px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.homeTitle {
+    color:white;
+    font-size: 30px;
+    
+    text-transform: uppercase;
+}
+.homeP {
+    color: rgb(242, 227, 177);
+    font-size: 15px;
+    text-transform: capitalize;
+    margin: 20px 0px ;
+}
+.homeButton {
+    width: 150px;
+    height: 55px;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.hb1 {
+    margin-left: 12px;
+    background-color: black;
+    color: aliceblue;
+}
+.homeButton:hover {
+    opacity: 0.5;
+}
+/* ********************** end home ********************** */
+
+
+/* ********************** start welcome ********************** */
+.welcomecontainer{
+    width: 80%;
+    height: 100vh;
+    
+    margin: auto;
+}
+.welcomeTitil{
+    margin: 80px 0px;
+    text-align: center;
+    font-size: 50px;
+}
+.line1 {
+    width: 150px;
+    height: 5px;
+    background-color: rgb(189, 7, 7);
+    margin: auto;
+    margin-top: -80px;
+    margin-bottom: 80px;
+}
+.line2 {
+    margin-top: -5px;
+    margin-left: 680px;
+}
+.line22 {
+    margin-left: 465px;
+}
+.line3 {
+    margin-left: 10px;
+   
+}
+.line4 {
+    margin:auto;
+    margin-top: -0.1px;
+    margin-left: 650px;
+}
+.line5 {
+    width: 100px;
+    margin-bottom: 90px;
+    margin-left: 425px;
+}
+.line6 {
+    margin-left: 550px;
+}
+.welcomeDiv{
+
+    float: left;
+    position: relative;
+    width: 30%;
+    text-align: center;
+    padding: 30px; 
+    border: 2px solid black;
+    border-radius: 20px;
+    
+}
+
+
+/* ////////////////////////////////welcome + offer + pricing + recent + team after */
+.after:after {
+    content: "";
+    position: absolute;  
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: burlywood;
+    border-radius: 20px;
+    opacity: 0.3;
+    
+}
+.after:hover::after {
+
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+
+}
+.after:hover h2 {
+    color: rgb(53, 27, 4);
+}
+.after:hover p {
+    color: rgb(212, 16, 32);
+}
+
+
+/*    after pricing  */
+.pricingDiv:after {
+    width: 100%;
+}
+.pricingDiv:hover p {
+    color: black;
+}
+.pricingDiv:hover .pricingP1 {
+    color: rgb(212, 16, 32);
+}
+
+
+/*    after recent  */
+.recentDiv:after {
+    width: 100%;
+    z-index: -1;
+    border-radius: 3px;
+}
+
+
+/*    after team    */
+.teamDiv:after {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0;
+}
+
+/* //////////////////////////////////welcome + offer + pricing + recent + team after */
+
+.welcomeDiv2 {
+    margin: 0 5%;
+}
+.welcomeDiv h2 {
+    margin: 10px 0px;
+    color: brown;
+    font-size: 30px;
+}
+.welcomeDiv a {
+    text-decoration: none;
+    color: rgb(171, 117, 52);
+    font-size: 20px;
+    margin: 50px 50px;
+}
+.welcomeDiv p {
+    margin: 10px;
+}
+.welcomeDiv i {
+    font-size: 35px;
+}
+/* ********************** end welcome ********************** */
+
+
+/* ********************** start books ********************** */
+.allBooks {
+
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(250, 240, 227);
+    position: relative;
+    
+}
+.booksContainer {
+
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.BookDiv {
+    
+    float: left;
+    border: 2px solid black;
+    width: 20%;
+    height: 270px; 
+    margin: 10px 80px ;
+    position: relative;
+    text-align: center;
+    background-color: black;
+    
+}
+.bookTitel {
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.bookContent {
+
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin:auto;
+    text-align: center;
+    font-weight: bold;
+    padding: 80px;
+    visibility: hidden;
+    
+}
+.bookP {
+
+    margin: 20PX 0PX;
+    font-size: 15px;
+    
+}
+.bookContent i {
+    background-color: rgb(240, 242, 255);
+    color: white;
+    font-size: 25px;
+    border-radius: 7px;
+    padding: 5px 5px;
+    display: inline;
+}
+.bookContent:hover {
+
+    color: azure;  
+    background-color: rgba(0, 0, 0, 0.7);
+   
+}
+.bookContent:hover i {
+
+    font-weight: bold;
+    color:gray;
+     
+}
+.BookDiv:hover .bookContent {
+   visibility: visible;
+}
+/* ********************** end books ********************** */
+
+
+/* ********************** start offer ********************** */
+.offerContainer {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 100px;
+    padding-left:80px;
+    padding-top: 40px;
+    
+}
+.offerDiv {
+
+    width: 22%;
+    height: 200px;
+    border: 2px solid black;
+    float: left;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px 50px;
+    text-align: center;
+    position: relative;
+    text-align: left;
+    
+}
+
+.offerDiv i {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    padding-left: -20px;
+    font-size: 20px;
+}
+.offerDiv h2 {
+    padding-left: 15px;
+}
+.offerTitel {
+    margin: 0px 400px;
+    padding-top: 20px;
+    
+    font-size: 50px;
+    
+}
+.offerDiv p {
+    padding-left: 15px;
+    margin: 5px 0px;
+    text-align: left;
+    color: brown;
+}
+/* ********************** end offer ********************** */
+
+
+/* ********************** start chooseu ********************** */
+.chooseusContainer {
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 80px;
+    padding-left:80px;
+    padding-top: 80px;  
+
+}
+.chooseusCover {
+    position: relative;
+}
+
+.chooseusDivTitel {
+    width: 50%;
+    float: left;
+    padding-top: 60px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.chooseusDivTitel i {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.chooseusDivImag {
+
+    text-align: center;
+    width: 30%;
+    height: 450px;
+    float: left;
+    position: absolute;
+    right: 40px;
+   
+}
+.divimage {
+    width: 100%;
+    height: 95%;
+}
+.chooseusDivImag ul li {
+    list-style-type: none;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    float: left;
+    /* margin: 20px;  */
+    border-radius: 50%;  
+  
+}
+.chooseusDivImag ul {
+    margin: 20px;
+    margin-left: 162px;
+}
+.li2 {
+    margin: 0px 20px;
+}
+.li1:hover {
+    background-color: brown;
+}
+.li2:hover {
+    background-color: brown;
+}
+.li3:hover {
+    background-color: brown;
+}
+.chooseusTitel {
+    margin: 0px 50pxpx;
+    padding-top: 20px;
+    font-size: 50px;
+}
+/* ********************** end chooseu ********************** */
+
+
+/* ********************** start icon ********************** */
+.iconContainer {
+
+    width: 100%;
+    height: 50vh;
+    padding: 50px;
+    margin-top: 150px;
+    background-image: url(../imag/book7.jpg);
+    background-attachment: fixed;
+    padding-left: 150px;
+    margin-bottom:100px;
+    text-align: center;
+    font-size: 20px;
+
+}
+.iconCover{
+    position: relative;
+}
+.iconDiv {
+
+    width: 170px;
+    height: 200px;
+    float: left;
+    margin: 70px 70px;
+    padding-top: 12px;
+    color: white;
+ 
+}
+.iconCover i {
+    font-size: 50px;
+    color: rgb(214, 8, 8);
+}
+.iconH2 {
+    margin: 15px 15px;
+    color: white;
+}
+/* ********************** end icon ********************** */
+
+
+/* ********************** start prising ********************** */
+.pricingContainer {
+    width: 100%;
+    height: 100vh;
+    /* background-color: blueviolet; */
+    padding: 20px;
+}
+
+.pricingDiv {
+    width: 350px;
+    height: 400px;
+    /* background-color: aquamarine; */
+    border: 2px solid black;
+    float: left;
+    margin: 150px 70px;
+    padding: 3PX 10PX;
+    text-align: center;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:bold;
+    text-transform: capitalize;
+    border-radius: 20px;
+    position: relative;
+     
+ }
+.p2Circle {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin-left: 125px;
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 3px solid black;
+   
+} 
+ .pricingDiv p {
+    margin: 25px 0px;
+ }
+ .pricingDiv .p2Circle {
+    margin: 0px  110px;
+ }
+.pricingbut {
+    width: 200px;
+    height: 35px;
+    background-color: chocolate;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 15px;
+    border: 3px solid black;
+        
+}
+.pricingTitel{
+    
+    margin: 0px 600px;
+    /* padding-top: 20px; */
+    font-size: 50px;
+}
+/* ********************** end pricing ********************** */
+
+
+/* ********************** start people ********************** */
+.peopleContainer {
+
+    width: 100%;
+    height: 50vh;
+    padding: 50px;
+    margin-top: 150px;
+    background-color: blueviolet;
+    background-image: url(../imag/bookn.jpg);
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    padding-left: 150px;
+    margin-bottom:50px;
+    text-align: center;
+    font-size: 20px;
+}
+.peopleCover {
+    position: relative;
+}
+
+.peopleDiv {
+
+    width: 500px;
+    height: 200px;
+    float: left;
+    margin: 20px 70px;
+    padding-top: 12px;
+    position: relative;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+
+}
+.peopleDiv p {
+    margin: 20px 20px;
+}
+.peopleimag {
+
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    border-radius: 50%;
+    border: 4px solid black;
+    background-color: beige;
+
+}
+.pp2 {
+    color: rgb(236, 106, 13);
+}
+/* ********************** end people ********************** */
+
+
+/* ********************** start team ********************** */
+.teamContainer {
+    width: 80%;
+    margin: auto;
+    /* background-color: blueviolet; */
+    padding: 100px;
+    padding-bottom: 500px;
+}
+.teamDiv {
+    float: left;
+    background-color:rgb(188, 148, 108);
+    width: 30%;
+    padding: 14px 18px;
+    text-align: center;
+    position: relative;
+
+}
+.teamTitelBig {
+    margin: 0px 370px;
+    font-size: 50px;
+    padding: -100px;   
+    text-transform:capitalize;
+}
+.teamPerson2 {
+    margin: 0px 5%;
+}
+.teamImage {
+    /* background-color: brown; */
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.teamImage img {
+    width: 100%;
+}
+.teamOverlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.648);
+    visibility: hidden;
+}
+.teamOverlay a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(117, 5, 5);
+    color: white;
+    font-size: 20px;
+    margin-left: auto;
+    
+}
+.teamOverlay a i { 
+    line-height: 40px;
+}
+.teamTitel {
+    text-transform: uppercase;
+    padding: 12px 0px;
+}
+.teamTitel p {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+.teamDiv:hover .teamOverlay {
+    visibility: visible;
+}
+/* ********************** end team ********************** */
+
+
+/* ********************** start recent ********************** */
+.recentContainer {
+    width: 80%;
+    margin: auto;    
+}
+
+.recentDiv {
+    width: 30%;
+    /* background-color: rgb(172, 115, 115); */
+    float: left;
+    padding: 14px 18px;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    border: 3px solid black;
+    position: relative;
+}
+.recentTitelBig {
+    margin: 0px 470px;
+    font-size: 50px;  
+    text-transform:capitalize;        
+    
+}
+.recentDiv p {
+    margin: 20px 20px;
+}
+.recentDiv h2 {
+    margin-top: 10px;
+}
+.rediv2 {
+    margin: 0px 5%;
+}
+.recentDiv span {
+   margin-right: 25px;
+}
+.recentDiv img {
+    margin-bottom: 10px;
+}
+.recentDiv a {
+    text-decoration: none;
+}
+.recentDiv i {
+    font-size: 30px;
+    color: rgb(117, 5, 5);
+}
+/* ********************** end recent ********************** */
+
+
+/* ********************** start last ********************** */
+.lastContenier {
+    width: 100%;
+    height: 50vh;
+    margin: auto;
+    background-color: rgb(237, 222, 205);
+    margin-top: 700px;
+    text-align: center;
+    padding: 30px 0px;
+}
+.lastImag {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+.lastDiv i {
+    margin: 10px 10px;
+    font-size: 40px;
+    background-color:brown;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 4px 4px;
+    padding-top: 5px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.face:hover {
+    background-color: rgb(83, 4, 4);
+}
+.twit:hover {
+    background-color: rgb(83, 4, 4);
+}
+.tube:hover {
+    background-color: rgb(83, 4, 4);
+}
+.in:hover {
+    background-color: rgb(83, 4, 4);
+}
+.insta:hover {
+    background-color: rgb(83, 4, 4);
+}.goo:hover {
+    background-color: rgb(83, 4, 4);
+}
+/* ********************** end last ********************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .pricingDiv:after {
+    content: "";
+    position: absolute;
+    
+    width: 100%;
+    height:0;
+    top: 0;
+    left: 0;
+    
+    background-color: burlywood;
+    border-radius: 20px;
+    opacity: 0.3;
+    
+
+}
+.pricingDiv:hover::after {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+   
+} */
+
+
+
+
+
+
+
+
+
+
+/* 
+.pricingDiv {
+    width: 350px;
+    height: 400px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    float: left;
+    margin: 150px 70px;
+    padding: 20PX 10PX;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:bold;
+    border-radius: 17px;
+   
+    
+    
+
+    
+ }
+ .pricingDiv p {
+    margin: 25px 0px;
+ } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .bookDive {
+    width: 100px;
+    height: 100px;
+
+    background-color: aquamarine;
+} */
+/* .bookDiv {
+    float: left;
+    position: relative;
+   
+    width: 30%; */
+    /* height: 200px; */
+    /* text-align: center;
+    padding: 30px;
+    
+   
+    border: 2px solid black;
+    border-radius: 20px;
+} */
+
+
+
+
